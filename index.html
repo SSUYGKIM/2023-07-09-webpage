@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- google 분석이다-->
+                <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0MVFLL46P"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K0MVFLL46P');
+        </script>
+        <title>WEB-CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    
+
+        <!-- a { }를 선택자라고 부른다.
+            선택자는 누구에게 어떤 효과를 줄지를 결정한다 -->
+        <style>
+            a { 
+                color:blue;
+            }
+        </style>
+        <!--
+            위의 뜻은 이제부터 a링크 태그는 모두 빨간색으로 해라<br>
+
+            아래 font 쓴거랑 똑같은 내용<br>
+
+            이렇게 하는 이유는 만약 a 링크가 1억 개면 모두 다 바꿔야 하지만 CSS는 그럴 필요가 없다<br>
+            
+            유지보수에 용이하다
+        -->
+    </head>
+
+
+    <body> 
+        <h1><a href="index.html" target="_blank">WEB???</a></h1>
+        <div id="grid">
+        <ol>
+            <li><a href="HTML.html" target="_blank"><input type="checkbox">HTML</a></li>
+            <li><a href="REALCSS.html" target="_blank"><input type="checkbox">CSS</a></li>
+            <li><a href="javascript.html" target="_blank"><input type="checkbox">JAVASCRIPT</a></li>
+        </ol>
+        
+        <!--
+            여기는 안나오는 공간<br>
+             <h1><a href="index.html" target="_blank"><font color="red">WEB???</font></a></h1>
+        <ol>
+            <li><a href="HTML.html" target="_blank"><input type="checkbox"><font color="red">HTML</font></a></li>
+            <li><a href="CSS.html" target="_blank"><input type="checkbox"><font color="red">CSS</font></a></li>
+            <li><a href="javascript.html" target="_blank"><input type="checkbox"><font color="red">JAVASCRIPT</font></a></li>
+        </ol>
+        -->
+        
+        <div>
+        <h2>HTML이란 무엇인가?</h2>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+        <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 speicification">Hypertext Markup Language(HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web broswers recieve HTML documents from a web server or form local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically an doriginally included cues for the appearance of the document 그냥 img만 쓰면 사진 없음</p>
+
+         <img src="coding.jpg" width="500">
+
+        <p>src는 source의 약자이다. 사진을 web 문서로 이동하면 왼쪽 화면에 사진이 나타난다.  " "안에는 사진의 이름를 적는다. 크기가 너무 커서 width로 줄인다. <br> src나 width는 attribute라 하고 어는 것이 먼저 오는지는 상관없다. <br> HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms, may be embedded into the rendered page</p>
+        </div>
+        </div>
+
+        <p>
+            <!-- 댓글-->
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://web1-7qne6bws0z.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+        <p>
+            <!-- 채팅 -->
+            <!--Start of Tawk.to Script-->
+            <script type="text/javascript">
+                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/64a4ef3b94cf5d49dc6198d2/1h4i4d0a0';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+                })();
+                </script>
+                <!--End of Tawk.to Script-->
+        </p>
+        </div>
+        </div>
+    </body>
+</html

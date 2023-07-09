@@ -1,0 +1,45 @@
+<style>
+             body{
+                margin:0;
+            }
+
+           a{
+                color:black;
+                text-decoration:none;
+            }
+
+
+            h1{
+                font-size:45px;text-align:center;
+                border-bottom:1px solid gray;
+                margin:0;
+                padding:20px;
+            }
+            
+            ol {
+                border-right:1px solid gray;
+                width:120px;
+                /*ol태그의 크기를 조정*/
+                margin:0;
+                /*margin 값이 0이 아니면 직선이 떠있음*/
+                padding:20px;
+                /*위를 안하면 1. html이 위의 직선에 너무 붙음*/
+            }
+
+            #grid{
+                display:grid;
+                grid-template-columns:180px 1fr;
+            }
+            
+            @media(max-width:711px){
+                /*화면이 작아지면 grid가 깨지고 ol 옆 선도 없어져야 한다.*/
+                #grid{
+                display:block;
+            }
+
+            ol {
+                border-right:None;
+            }
+            }
+            
+</style> 
